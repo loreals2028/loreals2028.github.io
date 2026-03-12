@@ -6,3 +6,6 @@ div{
 a {
   font-weight: bold;
 }
+#body
+{background: linear-gradient(135deg, #f7c6f2 0%, #e2d1c3 100%); 
+}
