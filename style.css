@@ -8,22 +8,369 @@ a {
 }
 #body
 {background: rgb(255, 255, 255); 
+ background-image: url(lace.jpg);
+ background-size: cover;
+ overflow: hidden;
 }
 
-@keyframes text-typewriter {
-    0% { width: 0; }
-    100% { width: 100%; }
+#Navigation, #Home, #About, #Contact {
+    background:white;
 }
 
-.animated-text {
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid;
-    animation: text-typewriter 3.7s steps(40) infinite, blink 0.75s step-end infinite;
-    animation-delay: 0.3s;
-}
 
-@keyframes blink {
-    0%, 50% { border-color: transparent; }
-    51%, 100% { border-color: currentColor; }
+.input-wrapper {
+  display: block;
+  font-family: monospace;
+  font-size: 125%;
+  width: 50%;
+}
+.input-wrapper > input,
+.input-wrapper > .placeholder {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+.input-wrapper > .placeholder {
+  pointer-events: none;
+}
+.input-wrapper > .placeholder::before {
+  content: "​";
+  content: "​"/"too niche for u";
+  alt: "too niche for u";
+  white-space: break-spaces;
+  will-change: content;
+  -webkit-animation: typed-0 3.8s linear 1s infinite forwards;
+          animation: typed-0 3.8s linear 1s infinite forwards;
+}
+.input-wrapper > .placeholder::after {
+  content: "​";
+  position: relative;
+  display: inline-block;
+  padding-right: 2px;
+  border-right: 2px solid currentColor;
+  white-space: nowrap;
+  -webkit-animation: typed-0-caret 0.75s linear 1s infinite forwards;
+          animation: typed-0-caret 0.75s linear 1s infinite forwards;
+}
+@-webkit-keyframes typed-0 {
+  0%, 1.7533859649% {
+    content: "​t";
+    content: "​t"/"too niche for u";
+    alt: "too niche for u";
+  }
+  1.7543859649%, 3.5077719298% {
+    content: "​to";
+    content: "​to"/"too niche for u";
+    alt: "too niche for u";
+  }
+  3.5087719298%, 5.2621578947% {
+    content: "​too";
+    content: "​too"/"too niche for u";
+    alt: "too niche for u";
+  }
+  5.2631578947%, 7.0165438596% {
+    content: "​too ";
+    content: "​too "/"too niche for u";
+    alt: "too niche for u";
+  }
+  7.0175438596%, 8.7709298246% {
+    content: "​too n";
+    content: "​too n"/"too niche for u";
+    alt: "too niche for u";
+  }
+  8.7719298246%, 10.5253157895% {
+    content: "​too ni";
+    content: "​too ni"/"too niche for u";
+    alt: "too niche for u";
+  }
+  10.5263157895%, 12.2797017544% {
+    content: "​too nic";
+    content: "​too nic"/"too niche for u";
+    alt: "too niche for u";
+  }
+  12.2807017544%, 14.0340877193% {
+    content: "​too nich";
+    content: "​too nich"/"too niche for u";
+    alt: "too niche for u";
+  }
+  14.0350877193%, 15.7884736842% {
+    content: "​too niche";
+    content: "​too niche"/"too niche for u";
+    alt: "too niche for u";
+  }
+  15.7894736842%, 17.5428596491% {
+    content: "​too niche ";
+    content: "​too niche "/"too niche for u";
+    alt: "too niche for u";
+  }
+  17.5438596491%, 19.297245614% {
+    content: "​too niche f";
+    content: "​too niche f"/"too niche for u";
+    alt: "too niche for u";
+  }
+  19.298245614%, 21.0516315789% {
+    content: "​too niche fo";
+    content: "​too niche fo"/"too niche for u";
+    alt: "too niche for u";
+  }
+  21.0526315789%, 22.8060175439% {
+    content: "​too niche for";
+    content: "​too niche for"/"too niche for u";
+    alt: "too niche for u";
+  }
+  22.8070175439%, 24.5604035088% {
+    content: "​too niche for ";
+    content: "​too niche for "/"too niche for u";
+    alt: "too niche for u";
+  }
+  24.5614035088%, 62.8060175439% {
+    content: "​too niche for u";
+    content: "​too niche for u"/"too niche for u";
+    alt: "too niche for u";
+  }
+  62.8070175439%, 64.2095263158% {
+    content: "​too niche for ";
+    content: "​too niche for "/"too niche for u";
+    alt: "too niche for u";
+  }
+  64.2105263158%, 65.6130350877% {
+    content: "​too niche for";
+    content: "​too niche for"/"too niche for u";
+    alt: "too niche for u";
+  }
+  65.6140350877%, 67.0165438596% {
+    content: "​too niche fo";
+    content: "​too niche fo"/"too niche for u";
+    alt: "too niche for u";
+  }
+  67.0175438596%, 68.4200526316% {
+    content: "​too niche f";
+    content: "​too niche f"/"too niche for u";
+    alt: "too niche for u";
+  }
+  68.4210526316%, 69.8235614035% {
+    content: "​too niche ";
+    content: "​too niche "/"too niche for u";
+    alt: "too niche for u";
+  }
+  69.8245614035%, 71.2270701754% {
+    content: "​too niche";
+    content: "​too niche"/"too niche for u";
+    alt: "too niche for u";
+  }
+  71.2280701754%, 72.6305789474% {
+    content: "​too nich";
+    content: "​too nich"/"too niche for u";
+    alt: "too niche for u";
+  }
+  72.6315789474%, 74.0340877193% {
+    content: "​too nic";
+    content: "​too nic"/"too niche for u";
+    alt: "too niche for u";
+  }
+  74.0350877193%, 75.4375964912% {
+    content: "​too ni";
+    content: "​too ni"/"too niche for u";
+    alt: "too niche for u";
+  }
+  75.4385964912%, 76.8411052632% {
+    content: "​too n";
+    content: "​too n"/"too niche for u";
+    alt: "too niche for u";
+  }
+  76.8421052632%, 78.2446140351% {
+    content: "​too ";
+    content: "​too "/"too niche for u";
+    alt: "too niche for u";
+  }
+  78.2456140351%, 79.648122807% {
+    content: "​too";
+    content: "​too"/"too niche for u";
+    alt: "too niche for u";
+  }
+  79.649122807%, 81.0516315789% {
+    content: "​to";
+    content: "​to"/"too niche for u";
+    alt: "too niche for u";
+  }
+  81.0526315789%, 82.4551403509% {
+    content: "​t";
+    content: "​t"/"too niche for u";
+    alt: "too niche for u";
+  }
+  82.4561403509%, 100% {
+    content: "​";
+    content: "​"/"too niche for u";
+    alt: "too niche for u";
+  }
+}
+@keyframes typed-0 {
+  0%, 1.7533859649% {
+    content: "​t";
+    content: "​t"/"too niche for u";
+    alt: "too niche for u";
+  }
+  1.7543859649%, 3.5077719298% {
+    content: "​to";
+    content: "​to"/"too niche for u";
+    alt: "too niche for u";
+  }
+  3.5087719298%, 5.2621578947% {
+    content: "​too";
+    content: "​too"/"too niche for u";
+    alt: "too niche for u";
+  }
+  5.2631578947%, 7.0165438596% {
+    content: "​too ";
+    content: "​too "/"too niche for u";
+    alt: "too niche for u";
+  }
+  7.0175438596%, 8.7709298246% {
+    content: "​too n";
+    content: "​too n"/"too niche for u";
+    alt: "too niche for u";
+  }
+  8.7719298246%, 10.5253157895% {
+    content: "​too ni";
+    content: "​too ni"/"too niche for u";
+    alt: "too niche for u";
+  }
+  10.5263157895%, 12.2797017544% {
+    content: "​too nic";
+    content: "​too nic"/"too niche for u";
+    alt: "too niche for u";
+  }
+  12.2807017544%, 14.0340877193% {
+    content: "​too nich";
+    content: "​too nich"/"too niche for u";
+    alt: "too niche for u";
+  }
+  14.0350877193%, 15.7884736842% {
+    content: "​too niche";
+    content: "​too niche"/"too niche for u";
+    alt: "too niche for u";
+  }
+  15.7894736842%, 17.5428596491% {
+    content: "​too niche ";
+    content: "​too niche "/"too niche for u";
+    alt: "too niche for u";
+  }
+  17.5438596491%, 19.297245614% {
+    content: "​too niche f";
+    content: "​too niche f"/"too niche for u";
+    alt: "too niche for u";
+  }
+  19.298245614%, 21.0516315789% {
+    content: "​too niche fo";
+    content: "​too niche fo"/"too niche for u";
+    alt: "too niche for u";
+  }
+  21.0526315789%, 22.8060175439% {
+    content: "​too niche for";
+    content: "​too niche for"/"too niche for u";
+    alt: "too niche for u";
+  }
+  22.8070175439%, 24.5604035088% {
+    content: "​too niche for ";
+    content: "​too niche for "/"too niche for u";
+    alt: "too niche for u";
+  }
+  24.5614035088%, 62.8060175439% {
+    content: "​too niche for u";
+    content: "​too niche for u"/"too niche for u";
+    alt: "too niche for u";
+  }
+  62.8070175439%, 64.2095263158% {
+    content: "​too niche for ";
+    content: "​too niche for "/"too niche for u";
+    alt: "too niche for u";
+  }
+  64.2105263158%, 65.6130350877% {
+    content: "​too niche for";
+    content: "​too niche for"/"too niche for u";
+    alt: "too niche for u";
+  }
+  65.6140350877%, 67.0165438596% {
+    content: "​too niche fo";
+    content: "​too niche fo"/"too niche for u";
+    alt: "too niche for u";
+  }
+  67.0175438596%, 68.4200526316% {
+    content: "​too niche f";
+    content: "​too niche f"/"too niche for u";
+    alt: "too niche for u";
+  }
+  68.4210526316%, 69.8235614035% {
+    content: "​too niche ";
+    content: "​too niche "/"too niche for u";
+    alt: "too niche for u";
+  }
+  69.8245614035%, 71.2270701754% {
+    content: "​too niche";
+    content: "​too niche"/"too niche for u";
+    alt: "too niche for u";
+  }
+  71.2280701754%, 72.6305789474% {
+    content: "​too nich";
+    content: "​too nich"/"too niche for u";
+    alt: "too niche for u";
+  }
+  72.6315789474%, 74.0340877193% {
+    content: "​too nic";
+    content: "​too nic"/"too niche for u";
+    alt: "too niche for u";
+  }
+  74.0350877193%, 75.4375964912% {
+    content: "​too ni";
+    content: "​too ni"/"too niche for u";
+    alt: "too niche for u";
+  }
+  75.4385964912%, 76.8411052632% {
+    content: "​too n";
+    content: "​too n"/"too niche for u";
+    alt: "too niche for u";
+  }
+  76.8421052632%, 78.2446140351% {
+    content: "​too ";
+    content: "​too "/"too niche for u";
+    alt: "too niche for u";
+  }
+  78.2456140351%, 79.648122807% {
+    content: "​too";
+    content: "​too"/"too niche for u";
+    alt: "too niche for u";
+  }
+  79.649122807%, 81.0516315789% {
+    content: "​to";
+    content: "​to"/"too niche for u";
+    alt: "too niche for u";
+  }
+  81.0526315789%, 82.4551403509% {
+    content: "​t";
+    content: "​t"/"too niche for u";
+    alt: "too niche for u";
+  }
+  82.4561403509%, 100% {
+    content: "​";
+    content: "​"/"too niche for u";
+    alt: "too niche for u";
+  }
+}
+@-webkit-keyframes typed-0-caret {
+  75% {
+    border-color: transparent;
+  }
+}
+@keyframes typed-0-caret {
+  75% {
+    border-color: transparent;
+  }
+}
+.input-wrapper > input:focus + .placeholder, .input-wrapper > input:active + .placeholder {
+  display: none;
 }
