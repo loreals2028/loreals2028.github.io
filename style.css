@@ -11,10 +11,9 @@ a {
 {background: rgb(255, 255, 255); 
  background-image: url(grey-background.jpg);
  background-size: cover;
- overflow: hidden;
 }
 
-#Navigation, #Home, #About, #Contact {
+#Navigation, #Home, #About, #Contact, #Art, #Contact {
     background:white;
     color:rgb(97, 103, 103);
 
