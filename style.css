@@ -5,16 +5,19 @@ div{
 
 a {
   font-weight: bold;
+  color:rgb(124, 127, 128)  !important;
 }
 #body
 {background: rgb(255, 255, 255); 
- background-image: url(lace.jpg);
+ background-image: url(grey-background.jpg);
  background-size: cover;
  overflow: hidden;
 }
 
 #Navigation, #Home, #About, #Contact {
     background:white;
+    color:rgb(97, 103, 103);
+
 }
 
 
@@ -373,4 +376,9 @@ a {
 }
 .input-wrapper > input:focus + .placeholder, .input-wrapper > input:active + .placeholder {
   display: none;
+}
+
+h1,h2,h3{
+  font-family:"Tangerine";
+  font-size:larger;
 }
