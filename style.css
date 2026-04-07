@@ -1,22 +1,26 @@
 div{
-    border: 1px double rgb(119, 121, 121);
+    border: 1px double rgb(78, 78, 78);
     padding: 15px;
     border-width: 5px;
+    
 }
 
 a {
   font-weight: bold;
   color:rgb(124, 127, 128)  !important;
 }
-#body
+  
+
+body
 {background: rgb(255, 255, 255); 
  background-image: url(grey-background.jpg);
  background-size: cover;
 }
 
 #Navigation, #Home, #About, #Contact, #Music, #Contact {
-    background:white;
+    
     color:rgb(97, 103, 103);
+    
 
 }
 
@@ -24,7 +28,6 @@ a {
   margin-bottom: 10px;
 }
 
-#Destinations
 
 
 .input-wrapper {
@@ -387,4 +390,5 @@ a {
 h1,h2,h3{
   font-family:"Tangerine";
   font-size:larger;
+  background-color: white;
 }
