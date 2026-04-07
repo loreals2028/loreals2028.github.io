@@ -1,6 +1,7 @@
 div{
-    border: 1px dotted rgb(0, 0, 0);
-    padding: 10px;
+    border: 1px double rgb(119, 121, 121);
+    padding: 15px;
+    border-width: 5px;
 }
 
 a {
@@ -13,11 +14,17 @@ a {
  background-size: cover;
 }
 
-#Navigation, #Home, #About, #Contact, #Art, #Contact {
+#Navigation, #Home, #About, #Contact, #Music, #Contact {
     background:white;
     color:rgb(97, 103, 103);
 
 }
+
+.row img{
+  margin-bottom: 10px;
+}
+
+#Destinations
 
 
 .input-wrapper {
